@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  get '/secret', to: 'pages#index', as: :secret
+  root to: 'pages#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
